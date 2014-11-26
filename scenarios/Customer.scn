@@ -1,0 +1,16 @@
+Tags:
+Preconditions:
+New Customer:
+#Create Customer "Test User"
+
+View Customer:
+#Log In "Test User"
+
+New Customer, Create Duplicate Customer:
+#Create Customer "Test User"
+#Check for duplicate message "Customer [Test User] already exists"
+
+View Customer, Create Account:
+#Log In "Test User"
+#Create Checking Account with balance "123.45"
+#Check for account with "Balance $123.45"
